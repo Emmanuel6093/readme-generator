@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "This a ReadME generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmanuel6093/readme-generator.git"
+  },
+  "author": "Emmanuel Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emmanuel6093/readme-generator/issues"
+  },
+  "homepage": "https://github.com/Emmanuel6093/readme-generator#readme"
+}
