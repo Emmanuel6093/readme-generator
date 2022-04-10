@@ -6,6 +6,10 @@ const inquirer = require('inquirer');
      return `# ${data.title}`;
  }
 
+ const licenseBadge = (license) => {}
+
+ const licenseLink = (license) => {}
+
 const promptUser = () => {
     return inquirer.prompt ([
         {
@@ -86,5 +90,30 @@ const promptUser = () => {
     ]);
 };
 
-
-promptUser()
+const writeReadMe = (input) => {
+    var ReadMeText = `# ${input.title}
+        ##Table of Contents
+        [Description](#description)
+        [Installation](#installation)
+        [Usage](#usage)
+        [License](#license)
+        [Contributing](#contributing)
+        [Testing](#testing)
+        [Questions](#questions)
+        ## Description
+        ${input.description}
+        ## Installation
+        ${input.installation}
+        ## Usage
+        ${input.usage}
+        ## License 
+        ${input.license}
+        ## Contributing 
+        ${input.contributions}
+        ## Testing 
+        ${input.test}
+        ## Questions
+        ${input.github}
+        ${input.email}
+    `
+}
