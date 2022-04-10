@@ -2,9 +2,9 @@ const fs = require('fs');
 
 const inquirer = require('inquirer');
 
-const generateReadMe = (data) => {
-    return 
-}
+ const generateReadMe = (data) => {
+     return `# ${data.title}`;
+ }
 
 const promptUser = () => {
     return inquirer.prompt ([
@@ -83,5 +83,8 @@ const promptUser = () => {
             name: 'email', 
             message: 'What is your email?'
         }
-    ])
-}
+    ]);
+};
+
+
+promptUser()
