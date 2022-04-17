@@ -1,5 +1,5 @@
 
-    # Readme gen
+    # idk
         
     ##Table of Contents
         1. [Description](#description)
@@ -29,5 +29,5 @@
         idk
         
         ## Questions
-        If you have any question, email me at elorenzo6093@gmail.com or check out repos <https://github.com/undefined>GitHub</https:>.
+        If you have any questions, email me at elorenzo6093@gmail.com or check out my repos on GitHub Emmanuel6093.
     
