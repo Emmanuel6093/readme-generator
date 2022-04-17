@@ -1,5 +1,5 @@
 
-    # idk
+    # ReadMe Generator 
         
     ##Table of Contents
         1. [Description](#description)
@@ -11,22 +11,22 @@
         7. [Questions](#questions)
         
         ## Description
-        idk
+        generates a readme doc 
        
         ## Installation
-        idk
+        using nodejs 
         
         ## Usage
-        idk
+        to generate a professional readme doc
        
         ## License 
         MIT
         
         ## Contributing 
-        idk
+        contacting me
         
         ## Testing 
-        idk
+        none 
         
         ## Questions
         If you have any questions, email me at elorenzo6093@gmail.com or check out my repos on GitHub Emmanuel6093.
