@@ -2,15 +2,15 @@ const fs = require('fs');
 
 const inquirer = require('inquirer');
 
- function generateReadMe(data) {
-     return `# ${data.title}`;
- }
+function generateMarkDown(data) {
+    return `# ${data.title}`;
+}
 
-const promptUser = () => {
-    return inquirer.prompt ([
-        {
+// prompt user questions
+const questions = [{
+        
             type: 'input',
-            name: 'name',
+            name: 'title',
             message: 'What is the name of your project? (Required)',
             
             // project name required
@@ -25,7 +25,7 @@ const promptUser = () => {
         },
         {
             type: 'input', 
-            name: 'about', 
+            name: 'description', 
             message: 'Please provide some information about your project:'
         }, 
         {
@@ -50,22 +50,23 @@ const promptUser = () => {
         }, 
         {
             type: 'input', 
-            name: 'contribution', 
+            name: 'contributing', 
             message: 'Explain how could other users contribute to your project (optional):'
         }, 
         {
             type: 'input', 
-            name: 'tests', 
+            name: 'testing', 
             message: 'Provide tests for project and explain how to test (optional)'
         }, 
         {
-            type: 'checkbox', 
-            name: 'licenses', 
-            choices: ['afl-3.0', 'apache-2.0', 'artistic-2.0', 'bsl-1.0', 'bsd-2-clause', 'bsd-3-clause', 'bsd-3-clause-clear', 'cc', 'cc0-1.0', 'cc-by-4.0', 'cc-by-sa-4.0', 'wtfpl', 'ecl-2.0', 'epl-1.0', 'epl-2.0', 'eupl-1.1', 'agpl-3.0', 'gpl', 'gpl-2.0', 'gpl-3.0', 'lgpl', 'lgpl-2.1', 'lgpl-3.0', 'isc', 'lppl-1.3c', 'ms-pl', 'mit', 'mpl-2.0', 'osl-3.0', 'postgresql', 'ofl-1.1', 'ncsa', 'unlicense', 'zlib']
+            type: 'list', 
+            name: 'license', 
+            message: 'Please select which license you would like to use:',
+            choices: ["MIT", "Apache", "GNU GPLv3"], 
         },
         {
             type: 'input',
-            name: 'github',
+            name: 'questions',
             message: 'What is your GitHub Username? (Required)', 
             
             // GitHub Username required
@@ -82,37 +83,46 @@ const promptUser = () => {
             type: 'input', 
             name: 'email', 
             message: 'What is your email?'
-        }
-    ]);
-};
+        }, 
+    ];
+ 
 
-function writeReadMe(input) {
-    var ReadMeText = `# ${input.title}
-        ##Table of Contents
-        [Description](#description)
-        [Installation](#installation)
-        [Usage](#usage)
-        [License](#license)
-        [Contributing](#contributing)
-        [Testing](#testing)
-        [Questions](#questions)
+function fileGenerator(input) {
+    var readMeText = `
+    # ${input.title}
+        
+    ##Table of Contents
+        1. [Description](#description)
+        2. [Installation](#installation)
+        3. [Usage](#usage)
+        4. [License](#license)
+        5. [Contributing](#contributing)
+        6. [Testing](#testing)
+        7. [Questions](#questions)
+        
         ## Description
         ${input.description}
+       
         ## Installation
         ${input.installation}
+        
         ## Usage
         ${input.usage}
+       
         ## License 
         ${input.license}
+        
         ## Contributing 
-        ${input.contributions}
+        ${input.contributing}
+        
         ## Testing 
-        ${input.test}
+        ${input.testing}
+        
         ## Questions
-        ${input.github}
-        ${input.email}
+        If you have any question, email me at ${input.email} or check out repos <https://github.com/${input.github}>GitHub</https:>.
     `
-    fs.writeFile('./readme.md', ReadMeText, err => {
+    
+    fs.writeFile('./readme.md', readMeText, err => {
         if (err) {
             console.error(err)
             return
@@ -121,10 +131,10 @@ function writeReadMe(input) {
 }
 
 function init() {
-    inquirer.prompt(promptUser)
-    .then((answers) => {
-        writeReadMe(answers)
-    })
+    inquirer.prompt(questions) 
+        .then((answers) => {
+            fileGenerator(answers)
+        })
 }
 
 init();
