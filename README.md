@@ -1,35 +1,30 @@
 
-    # ReadMe Generator 
-        
-    ##Table of Contents
-        1. [Description](#description)
-        2. [Installation](#installation)
-        3. [Usage](#usage)
-        4. [License](#license)
-        5. [Contributing](#contributing)
-        6. [Testing](#testing)
-        7. [Questions](#questions)
-        
-        ## Description
-        generates a readme doc 
-       
-        ## Installation
-        using nodejs 
-        
-        ## Usage
-        to generate a professional readme doc
-       
-        ## License 
-        MIT
-        
-        ## Contributing 
-        contacting me
-        
-        ## Testing 
-        none 
-        
-        ## Questions
-        If you have any questions, email me at elorenzo6093@gmail.com or check out my repos on GitHub Emmanuel6093.
+# README Generator
+## Description
+Generates a profressional ReadMe document 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [Questions](#questions)
+- [Contact](#contact)
+## Installation
+Download the files thorugh my GitHub or clone the repo
+## Usage
+Once downloaded/cloned, in the CLI download the dependencies, and run "node index.js"
+## License
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+Source link for [MIT](https://opensource.org/licenses/MIT)
 
-        
-    
+## Contributors
+N/A
+## Tests
+N/A
+## Questions
+Contact me 
+## Contact
+[GitHub Profile](https://github.com/Emmanuel6093)
+[Email Me](elorenzo6093@gmail.com)
