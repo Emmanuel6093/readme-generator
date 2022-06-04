@@ -1,7 +1,7 @@
 
-# README Generator
+# Readme Generator 
 ## Description
-Generates a profressional ReadMe document 
+generates a readme 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -12,9 +12,9 @@ Generates a profressional ReadMe document
 - [Questions](#questions)
 - [Contact](#contact)
 ## Installation
-Download the files thorugh my GitHub or clone the repo
+download/clone files on github 
 ## Usage
-Once downloaded/cloned, in the CLI download the dependencies, and run "node index.js"
+provides a readme 
 ## License
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 Source link for [MIT](https://opensource.org/licenses/MIT)
@@ -24,7 +24,7 @@ N/A
 ## Tests
 N/A
 ## Questions
-Contact me 
+contact me
 ## Contact
 [GitHub Profile](https://github.com/Emmanuel6093)
 [Email Me](elorenzo6093@gmail.com)
