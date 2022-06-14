@@ -75,7 +75,7 @@ function renderLicenseLink(license) {
 				return '';
 			} else {
 				return(
-`## License
+`
 ${renderLicenseBadge(license)}
 ${renderLicenseLink(license)}
 `
@@ -86,6 +86,7 @@ ${renderLicenseLink(license)}
 	//  Create a function to generate markdown for README
 	function generateMarkdown(data) {
 		return `
+${renderLicenseSection(data.license)}
 # ${data.title}
 ## Description
 ${data.description}
@@ -102,7 +103,6 @@ ${data.description}
 ${data.installation}
 ## Usage
 ${data.usage}
-${renderLicenseSection(data.license)}
 ## Contributors
 ${data.contributors}
 ## Tests
@@ -111,8 +111,9 @@ ${data.tests}
 ${data.questions}
 ## Contact
 [GitHub Profile](https://github.com/${data.github})
-[Email Me](${data.email})
+
+${data.email}
 `
 };
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown

@@ -1,7 +1,11 @@
 
-# Readme Generator 
+
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+Source link for [MIT](https://opensource.org/licenses/MIT)
+
+# readme gen 
 ## Description
-generates a readme 
+generates a readme doc
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -12,19 +16,16 @@ generates a readme
 - [Questions](#questions)
 - [Contact](#contact)
 ## Installation
-download/clone files on github 
+download/clone files
 ## Usage
-provides a readme 
-## License
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-Source link for [MIT](https://opensource.org/licenses/MIT)
-
+through the CLI 
 ## Contributors
 N/A
 ## Tests
 N/A
 ## Questions
-contact me
+contact me 
 ## Contact
-[GitHub Profile](https://github.com/Emmanuel6093)
-[Email Me](elorenzo6093@gmail.com)
+[GitHub Profile](https://github.com/Emmanuel6093 )
+
+elorenzo6093@gmail.com

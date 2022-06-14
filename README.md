@@ -1,7 +1,9 @@
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+Source link for [MIT](https://opensource.org/licenses/MIT)
 
-# README Generator
+# Readme Generator
 ## Description
-Generates a profressional ReadMe document 
+Generates a professional README.md file for your project.
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -12,19 +14,16 @@ Generates a profressional ReadMe document
 - [Questions](#questions)
 - [Contact](#contact)
 ## Installation
-Download the files thorugh my GitHub or clone the repo
+Download/clone files on GitHub
 ## Usage
-Once downloaded/cloned, in the CLI download the dependencies, and run "node index.js"
-## License
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-Source link for [MIT](https://opensource.org/licenses/MIT)
-
+Once downloaded/cloned, make sure to have Node & Inquirer installed, then in the CLI run "npm i", and last run "node index.js" to launch app
 ## Contributors
 N/A
 ## Tests
 N/A
 ## Questions
-Contact me 
+N/A
 ## Contact
 [GitHub Profile](https://github.com/Emmanuel6093)
-[Email Me](elorenzo6093@gmail.com)
+
+elorenzo6093@gmail.com

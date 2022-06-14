@@ -19,7 +19,7 @@ const questions = [
 	{
 		type: 'input',
 		name: 'installation',
-		message: 'What are the required steps to install the project?\n',
+		message: 'What are the required steps to install the project?',
 	},
 	{
 		type: 'input',
@@ -35,27 +35,27 @@ const questions = [
 	{
 		type: 'input',
 		name: 'contributors',
-		message: 'Who contributed to this project?\n',
+		message: 'Who contributed to this project?',
 	},
 	{
 		type: 'input',
 		name: 'tests',
-		message: 'What are the test instructions for the project, if any?\n',
+		message: 'What are the test instructions for the project, if any?',
 	},
 	{
 		type: 'input',
 		name: 'questions',
-		message: 'What questions do you want answered about the project?\nThink of this as being open-ended allowing users to help you out in the future.\n',
+		message: 'What questions do you want answered about the project?',
 	},
 	{
 		type: 'input',
 		name: 'github',
-		message: 'What github do you want to use?\n- Make sure to spell it correctly!\n',
+		message: 'What github do you want to use?',
 	},
 	{
 		type: 'input',
 		name: 'email',
-		message: 'What is your email address?\n',
+		message: 'What is your email address?',
 	}
 ];
 
