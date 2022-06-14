@@ -27,3 +27,5 @@ N/A
 [GitHub Profile](https://github.com/Emmanuel6093)
 
 elorenzo6093@gmail.com
+
+[Video Demo](https://drive.google.com/file/d/1nIlcpQl1MXmao0f7CTgayWzxFXyTal1q/view) 
